@@ -9,28 +9,28 @@
         <!-- Name -->
         <div>
             <x-input-label for="name" :value="__('Name')" />
-            <x-text-input id="name" class="block mt-1 w-full" type="text" name="Name" value="{{ $list->LoansUser->name }}" required autofocus autocomplete="name" />
+            <p class="dark:text-gray-400">{{ $list->LoansUser->name }} </p>
             <x-input-error :messages="$errors->get('name')" class="mt-2" />
         </div>
 
         <!-- Email -->
         <div class="mt-4">
             <x-input-label for="email" :value="__('Email')" />
-            <x-text-input id="email" class="block mt-1 w-full" type="email" name="email" value="{{ $list->LoansUser->email }}" required />
+            <p class="dark:text-gray-400">{{ $list->LoansUser->email }} </p>
             <x-input-error :messages="$errors->get('email')" class="mt-2" />
         </div>
 
         <!-- Loan Amount -->
         <div class="mt-4">
             <x-input-label for="amount" :value="__('Loan Amount')" />
-            <x-text-input id="amount" class="block mt-1 w-full" type="text" name="amount" value="Rp. {{ $list->loan_amount }}" required />
+            <p class="dark:text-gray-400">{{ $list->loan_amount }} </p>
             <x-input-error :messages="$errors->get('amount')" class="mt-2" />
         </div>
 
         <!-- Loan Term -->
         <div class="mt-4">
             <x-input-label for="term" :value="__('Loan Term')" />
-            <x-text-input id="term" class="block mt-1 w-full" type="text" name="term" value="{{ $list->loan_term }} Weeks" required />
+            <p class="dark:text-gray-400">{{ $list->loan_term }} </p>
             <x-input-error :messages="$errors->get('term')" class="mt-2" />
         </div>
 

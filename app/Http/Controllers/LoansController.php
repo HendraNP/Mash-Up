@@ -79,7 +79,7 @@ class LoansController extends Controller
             $detail->save();
         }
 
-        return redirect()->to('loans')->with(['message' => 'Loans Approved']);
+        return redirect()->to('approval')->with(['message' => 'Loans Approved']);
     }
 
     public function repayment(){
